@@ -1,0 +1,12 @@
+.review__pic {
+  max-width: 10rem;
+  height: 10rem;
+  border-radius: 100%;
+}
+
+.flex__item__1 {
+  flex: 40%;
+}
+.flex__item__2 {
+  flex: 60%;
+}
