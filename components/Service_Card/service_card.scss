@@ -1,0 +1,45 @@
+#service_card .main-card {
+  position: relative;
+  height: 300px;
+  width: 250px;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+  box-shadow: 5px -5px 15px #bababa, -5px 5px 15px #ffffff;
+}
+#service_card .main-card img {
+  height: 240px;
+  width: 100%;
+  overflow: hidden;
+}
+#service_card .main-card .flipcard {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.3s ease;
+  background: #fff;
+}
+#service_card .main-card .flipcard .front-face,
+#service_card .main-card .flipcard .back-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  color: #fff;
+  // border-radius: 10px;
+  padding: 5px 10px;
+}
+#service_card .main-card .flipcard .front-face {
+  overflow: hidden;
+}
+#service_card .main-card .flipcard .back-face {
+  background: aliceblue;
+  transform: rotateY(180deg);
+  overflow: hidden;
+  color: black;
+  text-align: center;
+}
+
+#service_card .main-card:hover > .flipcard {
+  transform: rotateY(180deg);
+}
