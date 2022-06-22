@@ -207,6 +207,9 @@ const App = (props) => {
               <Route path='/'>
                 <Home theme={theme} />
               </Route>
+<Route path='/Abexita'>
+                <Home theme={theme} />
+              </Route>
             </Switch>
             <Footer />
           </Router>
